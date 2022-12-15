@@ -4,16 +4,19 @@ package com.portfolio.cay.Entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import java.io.Serializable;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
-/*Genera en forma automarica los Get&Set con Lombok*/
+
+
+/*Genera en forma automatica los Get&Set con Lombok*/
 @Getter @Setter 
 @Entity
-public class Persona {
+public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
