@@ -35,18 +35,10 @@ public class Persona implements Serializable {
     @Size(min=1, max=80, message="longitud de 1 a 80 caracteres")
     private String subtitulo;
     
-    @Size(min=1, max=650, message="longitud de 1 a 650 caracteres")
+    @Size(min=1, max=660, message="longitud de 1 a 670 caracteres")
     private String descripcion;
     
-    @NotNull
-    @Size(min=5, max=10, message="longitud de 5 a 10 caracteres")
-    private String usr;
-    
-    @NotNull
-    @Size(min=5, max=20, message="longitud de 5 a 20 caracteres")
-    private String password;
-      
-    private boolean admin;
+
 
    
     

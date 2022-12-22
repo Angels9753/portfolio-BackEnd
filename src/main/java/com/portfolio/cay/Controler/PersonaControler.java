@@ -46,10 +46,8 @@ public class PersonaControler {
                                 @RequestParam("apellido") String nuevoApellido,
                                 @RequestParam("img") String nuevoImg,
                                 @RequestParam("subtitulo") String nuevoSubtitulo,
-                                @RequestParam("descripcion") String nuevoDescripcion,
-                                @RequestParam("usr") String nuevoUsr,
-                                @RequestParam("password") String nuevoPassword,
-                                @RequestParam("admin") boolean nuevoAdmin){
+                                @RequestParam("descripcion") String nuevoDescripcion
+                                ){
        Persona persona=ipersonaService.findPersona(id);
        
        persona.setNombre(nuevoNombre);
@@ -57,9 +55,7 @@ public class PersonaControler {
        persona.setImg(nuevoImg);
        persona.setSubtitulo(nuevoSubtitulo);
        persona.setDescripcion(nuevoDescripcion);
-       persona.setUsr(nuevoUsr);
-       persona.setPassword(nuevoPassword);
-       persona.setAdmin(nuevoAdmin);
+       
        
        ipersonaService.savePersona(persona);
        return persona;
