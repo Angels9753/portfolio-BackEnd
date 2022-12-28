@@ -50,9 +50,9 @@ public class ProyectoControler {
             return new ResponseEntity(new Mensaje("El Institucion es obligatoria."), HttpStatus.BAD_REQUEST);
         }
 // El dato ya existe 
-        if (proyectoService.existsByInstitucionPr(dtoPro.getInstitucionPr())) {
-            return new ResponseEntity(new Mensaje("El Institucion ya existe."), HttpStatus.BAD_REQUEST);
-        }
+//        if (proyectoService.existsByInstitucionPr(dtoPro.getInstitucionPr())) {
+//            return new ResponseEntity(new Mensaje("El Institucion ya existe."), HttpStatus.BAD_REQUEST);
+//        }
 
         Proyecto proyecto = new Proyecto(
                 dtoPro.getInstitucionPr(),

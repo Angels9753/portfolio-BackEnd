@@ -50,9 +50,9 @@ public class EstudioControler {
             return new ResponseEntity(new Mensaje("El Titulo es obligatorio."), HttpStatus.BAD_REQUEST);
         }
 // El dato ya existe 
-        if (estudioService.existsByTituloEs(dtoEst.getTituloEs())) {
-            return new ResponseEntity(new Mensaje("El Titulo ya existe."), HttpStatus.BAD_REQUEST);
-        }
+//        if (estudioService.existsByTituloEs(dtoEst.getTituloEs())) {
+//            return new ResponseEntity(new Mensaje("El Titulo ya existe."), HttpStatus.BAD_REQUEST);
+//        }
 
         Estudio estudio = new Estudio(
                 dtoEst.getInstitucionEs(),

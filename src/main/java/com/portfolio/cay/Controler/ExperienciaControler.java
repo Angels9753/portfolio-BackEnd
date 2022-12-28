@@ -55,9 +55,9 @@ public class ExperienciaControler {
             return new ResponseEntity(new Mensaje("El Cargo es obligatorio."), HttpStatus.BAD_REQUEST);
         }
 // El dato ya existe 
-        if (experienciaService.existsByCargoEx(dtoExp.getCargoEx())) {
-            return new ResponseEntity(new Mensaje("El Cargo ya existe."), HttpStatus.BAD_REQUEST);
-        }
+//        if (experienciaService.existsByCargoEx(dtoExp.getCargoEx())) {
+//            return new ResponseEntity(new Mensaje("El Cargo ya existe."), HttpStatus.BAD_REQUEST);
+//        }
 
         Experiencia experiencia = new Experiencia(dtoExp.getInstitucionEx(),
                 dtoExp.getCargoEx(),
