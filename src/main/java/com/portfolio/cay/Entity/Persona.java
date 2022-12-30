@@ -10,10 +10,6 @@ import jakarta.validation.constraints.Size;
 import java.io.Serializable;
 
 
-
-
-/*Genera en forma automatica los Get&Set con Lombok*/
-
 @Entity
 public class Persona implements Serializable {
     @Id
