@@ -41,7 +41,6 @@ com\portfolio\cay\Service\ImpSkillDuraService.class
 com\portfolio\cay\Controler\PersonaControler.class
 com\portfolio\cay\Controler\ProyectoControler.class
 com\portfolio\cay\Service\ImpSkillIdiomaService.class
-com\portfolio\cay\WebConfig.class
 com\portfolio\cay\Service\ImpEstudioService.class
 com\portfolio\cay\Entity\Persona.class
 com\portfolio\cay\Entity\SkillBlanda.class
